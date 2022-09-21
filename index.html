@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border-style: border-box;
+      }
+    body {
+    font-size: 14px;
+    font-style:'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    }
+    .wrapper {
+    margin: 2rem 1rem;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    overflow: hidden;
+    }
+    .container {
+    max-width: 350px;
+    margin: 0 auto;
+    }
+    .img1 {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin-bottom: 15px
+    }
+    .img1 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    }
+    .img-overlay {
+    position: absolute;
+    width: 16%;
+    height: 35%;
+    display: none;
+    background-color:  hsla(178, 100%, 50%, 0.5);
+    }
+    .img-overlay img {
+    position: absolute;
+    left: 48%;
+    top: 35%;
+    }
+    .img1:hover .img-overlay  {
+      display: block;}
+    .text1 {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: large;
+    font-family:'Outfit', sans-serif; 
+    }
+    .text1:hover {
+      color: hsl(178, 100%, 50%);
+    }
+    
+    p.text2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(215, 51%, 70%);
+    margin-top: 10px;
+    }
+    
+    h5.text3 {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(178, 100%, 50%);
+    font-weight: 700;
+    font-size: 14px;
+    margin: 10px;
+    }
+    h5.text4-clock {
+    color: hsl(215, 51%, 70%);
+    font-family:"Frances",sans-serif ;
+    font-size: 14px;
+    padding: 14px;
+    }
+    div.box-text3-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    h6.text5 {
+    color: hsl(215, 51%, 70%);
+    font-family:'Outfit', sans-serif; 
+    font-size: 14px;
+    padding: 20px;
+    }
+    .jw {
+      text-decoration: none;
+      color: #fff;
+    }
+    .jw:hover {
+      color: hsl(178, 100%, 50%);
+      font-family:'Outfit', sans-serif;
+    }
+    .img2 {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #fff;
+    padding-top: 5px;
+    margin-top: 10px;
+    border-radius: 50%;
+    }
+    .am {
+      display: flex;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="img1">
+          <img src="images/image-equilibrium.jpg" alt="box" />
+        </div>
+        <div class="img-overlay">
+          <img src="images/icon-view.svg" alt="box2">
+        </div>
+        <div class="card-content">
+          <a href="#" class="text1">Equilibrium#3429</a>
+          <p class="text2">
+            Our Equilibrium collection promotes <br>balance and calm.
+          </p>
+          <div class="box-text3-4">
+            <h5 class="text3"><svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg> &nbsp;&nbsp;0.041 ETH </h5>
+            <h5 class="text4-clock"><svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>&nbsp;&nbsp;3 days left</h5>
+          </div>
+          <hr> 
+          <div class="am">
+          <img src = "images/image-avatar.png" alt=" avatar"  class = img2 >
+          <h6 class="text5"> Creation of <a href="#" class="jw">jules Wyvern</a></h6>
+          </div>   
+          
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
